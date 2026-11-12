@@ -1,0 +1,7 @@
+{"type":"system","subtype":"init","session_id":"00000000-0000-4000-8000-00000000c0a1","tools":["Bash","Read","Edit"]}
+{"type":"rate_limit_event","rate_limit_info":{"status":"allowed","resetsAt":1772452800,"rateLimitType":"five_hour"},"session_id":"00000000-0000-4000-8000-00000000c0a1"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Reading the build log first."}]},"session_id":"00000000-0000-4000-8000-00000000c0a1"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"tool_use","id":"toolu_0001","name":"Read","input":{"file_path":"logs/nightly-build.log"}}]},"session_id":"00000000-0000-4000-8000-00000000c0a1"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_0001","content":"FAIL date-parser.test.mjs"}]},"session_id":"00000000-0000-4000-8000-00000000c0a1"}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"One test failed: the date parser."}]},"session_id":"00000000-0000-4000-8000-00000000c0a1"}
+{"type":"result","subtype":"success","is_error":false,"result":"One test failed: the date parser.","total_cost_usd":0.0412,"session_id":"00000000-0000-4000-8000-00000000c0a1"}

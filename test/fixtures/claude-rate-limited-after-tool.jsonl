@@ -1,0 +1,6 @@
+{"type":"system","subtype":"init","session_id":"00000000-0000-4000-8000-00000000c0a3","tools":["Bash","Read","Edit"]}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"tool_use","id":"toolu_0002","name":"Edit","input":{"file_path":"src/date-parser.mjs","old_string":"getDay","new_string":"getDate"}}]},"session_id":"00000000-0000-4000-8000-00000000c0a3"}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_0002","content":"The file was updated."}]},"session_id":"00000000-0000-4000-8000-00000000c0a3"}
+{"type":"rate_limit_event","rate_limit_info":{"status":"rejected","resetsAt":1772452800,"rateLimitType":"five_hour"},"session_id":"00000000-0000-4000-8000-00000000c0a3"}
+{"type":"assistant","error":"rate_limit","message":{"role":"assistant","content":[{"type":"text","text":"You've hit your usage limit"}]},"session_id":"00000000-0000-4000-8000-00000000c0a3"}
+{"type":"result","subtype":"success","is_error":true,"result":"You've hit your usage limit","total_cost_usd":0.0089,"session_id":"00000000-0000-4000-8000-00000000c0a3"}

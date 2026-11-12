@@ -1,0 +1,6 @@
+node_modules/
+# Your own config and what the runs write: folder paths, run history and fix replies stay local.
+lanes.json
+state/
+*.log
+.env

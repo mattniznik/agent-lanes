@@ -1,0 +1,31 @@
+{
+  "name": "agent-lanes",
+  "version": "0.1.0",
+  "description": "Run scheduled AI agent jobs on the Claude Code and Codex CLIs, with fallback between lanes, credential checks, deny-rule guards and capped automatic fixes.",
+  "type": "module",
+  "bin": {
+    "agent-lanes": "bin/agent-lanes.mjs"
+  },
+  "exports": "./src/index.mjs",
+  "files": [
+    "bin",
+    "src",
+    "lanes.example.json",
+    "problems.example.json"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "agents",
+    "scheduler",
+    "fallback"
+  ],
+  "author": "Mat Niznik",
+  "license": "MIT"
+}

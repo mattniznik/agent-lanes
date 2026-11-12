@@ -1,0 +1,4 @@
+{"type":"system","subtype":"init","session_id":"00000000-0000-4000-8000-00000000c0a2","tools":["Bash","Read","Edit"]}
+{"type":"rate_limit_event","rate_limit_info":{"status":"rejected","resetsAt":1772452800,"rateLimitType":"five_hour"},"session_id":"00000000-0000-4000-8000-00000000c0a2"}
+{"type":"assistant","error":"rate_limit","message":{"role":"assistant","content":[{"type":"text","text":"You've hit your usage limit"}]},"session_id":"00000000-0000-4000-8000-00000000c0a2"}
+{"type":"result","subtype":"success","is_error":true,"result":"You've hit your usage limit","total_cost_usd":0,"session_id":"00000000-0000-4000-8000-00000000c0a2"}

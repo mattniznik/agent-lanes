@@ -1,0 +1,31 @@
+{
+  "lanes": {
+    "primary": { "cli": "claude", "home": "~/.claude", "auth": "apiKey", "keyEnv": "ANTHROPIC_API_KEY" },
+    "codex": { "cli": "codex", "home": "~/.codex", "auth": "apiKey", "keyEnv": "OPENAI_API_KEY" }
+  },
+  "routes": {
+    "jobs": {
+      "lane": "primary",
+      "fallback": "codex",
+      "permissionMode": "acceptEdits",
+      "sandbox": "workspace-write"
+    },
+    "review": {
+      "lane": "codex",
+      "sandbox": "read-only"
+    },
+    "fix": {
+      "lane": "primary",
+      "permissionMode": "bypassPermissions",
+      "strictMcp": true,
+      "denyCommands": ["git push*", "git * push*", "gh *", "npm publish*", "curl *", "wget *"],
+      "denyTools": ["Read(./.env)", "Read(./secrets/**)"]
+    }
+  },
+  "fix": {
+    "route": "fix",
+    "capPerKey": 3,
+    "capPerDay": 8,
+    "humanOnly": ["task:publish-*"]
+  }
+}

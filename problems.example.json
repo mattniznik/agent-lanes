@@ -1,0 +1,18 @@
+[
+  {
+    "key": "task:nightly-build",
+    "subject": "Nightly build",
+    "detail": "exited 1 at 02:00",
+    "log": "logs/nightly-build.log"
+  },
+  {
+    "key": "signin:codex",
+    "subject": "Codex lane sign-in",
+    "detail": "not signed in"
+  },
+  {
+    "key": "task:publish-newsletter",
+    "subject": "Newsletter publish",
+    "detail": "exited 1 at 07:00"
+  }
+]
