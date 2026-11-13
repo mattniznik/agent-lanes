@@ -1,5 +1,7 @@
 # agent-lanes
 
+[![CI](https://github.com/mattniznik/agent-lanes/actions/workflows/ci.yml/badge.svg)](https://github.com/mattniznik/agent-lanes/actions/workflows/ci.yml) ![Node 22+](https://img.shields.io/badge/node-22%2B-339933) ![Runtime dependencies: 0](https://img.shields.io/badge/runtime%20dependencies-0-brightgreen) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 agent-lanes runs scheduled AI agent jobs with the Claude Code and Codex CLIs. A lane is one CLI with its own config folder and the credential it is meant to use. A route says which lane does a kind of work and which lane takes over when that one is unavailable, for example a Claude lane that falls back to Codex. The rules underneath keep unattended runs safe: a run cannot pick up a different credential than its lane declares, a task that already did something is never started again on another lane, guarded routes carry deny rules that the CLI itself enforces, and automatic fix runs are capped by a history file that cannot be reset by accident. It is a small Node library with a thin CLI and no runtime dependencies. It shells out to the `claude` and `codex` CLIs you already have.
 
 Use it with credentials you are entitled to use for unattended work; for scheduled jobs that are part of a product or service, API key auth is what [Anthropic's terms](https://code.claude.com/docs/en/legal-and-compliance) point to.
