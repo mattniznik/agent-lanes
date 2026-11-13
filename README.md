@@ -167,7 +167,7 @@ A note on the formats. Some of the fields this reads are documented: the `result
 
 ## Where this came from
 
-I took this out of the system that runs my own scheduled work. As of November 2026 it runs 26 enabled scheduled jobs on a mini PC at home, written with Claude Code and reviewed by OpenAI Codex, controlled from Discord, with my approval before anything leaves the machine. These are the parts of it that apply to anyone running AI agents unattended; everything specific to my setup is left out.
+I took this out of the system that runs my own scheduled work. These are the parts of it that apply to anyone running AI agents unattended; everything specific to my setup is left out.
 
 ## License
 
